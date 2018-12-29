@@ -19,5 +19,9 @@ Route::get('jiege', function () {
     echo 1;exit;
 });
 
+Route::get('jiegetwo', function () {
+    echo 2;exit;
+});
+
 
 
