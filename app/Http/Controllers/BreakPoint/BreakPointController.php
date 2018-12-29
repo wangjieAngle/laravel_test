@@ -11,8 +11,8 @@ class BreakPointController extends Controller
 
     public function uploadGet()
     {
-        header('Content-type: text/plain; charset=utf-8');
-        header('Range: bytes=1-80');
+        /*header('Content-type: text/plain; charset=utf-8');
+        header('Range: bytes=1-80');*/
         var_dump($_SERVER);
     }
 
