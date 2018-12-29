@@ -11,7 +11,7 @@
 <body>
     {{$name}}
 
-    <div id="btn_one">点击按钮</div>
+    <button id="btn_one">点击按钮</button>
     <script>
         $("#btn_one").on('click', function () {
             $.ajax({
