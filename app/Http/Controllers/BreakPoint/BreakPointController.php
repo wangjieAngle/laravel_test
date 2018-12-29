@@ -16,12 +16,12 @@ class BreakPointController extends Controller
 //        var_dump($_SERVER);
         $file_path = public_path();
         $file_path .= "/img/qianbao_20181106_164755.png";
-        $speed = 512;//此参数为下载最大速度
+        $speed = 256;//此参数为下载最大速度512
         $pos = strrpos($file_path, "/");
         $file_name = substr($file_path, $pos+1);
         $file_size = filesize($file_path);
         $ranges = $this->getRange($file_size);
-        var_dump($ranges);exit;
+//        var_dump($ranges);exit;
         $fh =  fopen($file_path, "rb");
         header('Cache-control: public');
         header('Content-Type: application/octet-stream');

@@ -21,7 +21,7 @@
                     console.log(data);
                 },
                 beforeSend: function(xhr) {
-                    xhr.setRequestHeader("Range", "bytes=1-80");
+                    xhr.setRequestHeader("Range", "bytes=0-80");
                 }
             });
         })
