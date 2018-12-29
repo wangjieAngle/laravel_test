@@ -24,4 +24,10 @@ Route::get('jiegetwo', function () {
 });
 
 
+Route::group(['prefix' => 'breakpoint'], function () {
+
+    Route::get('/uploadGet', 'BreakPoint\BreakPointController@uploadGet');
+    Route::get('/uploadPost', 'BreakPoint\BreakPointController@uploadPost');
+});
+
 
