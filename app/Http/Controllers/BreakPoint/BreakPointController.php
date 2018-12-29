@@ -52,15 +52,15 @@ class BreakPointController extends Controller
         $range = isset($_SERVER['HTTP_RANGE'])?$_SERVER['HTTP_RANGE']:null;
         if(!empty($range)){
             $range = preg_replace('/[\s|,].*/', '', $range);
-            var_dump($range);
+//            var_dump($range);
             $range = explode('-',substr($range,6));
-            var_dump($range);
+//            var_dump($range);
             if (count($range) < 2 ) {
                 $range[1] = $file_size;
             }
-            var_dump($range);
+//            var_dump($range);
             $range = array_combine(array('start','end'),$range);
-            var_dump($range);
+//            var_dump($range);
             if (empty($range['start'])) {
                 $range['start'] = 0;
             }
